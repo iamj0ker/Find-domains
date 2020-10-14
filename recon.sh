@@ -23,7 +23,7 @@ amass enum -d $1 -o amass-enum.txt
 echo "${green}======> Amass-enum.txt saved"
 sleep 2
 echo "${yellow}======> Starting subbrute ...."
-#python3 ~/tools/massdns/scripts/subbrute.py ~/tools/SecLists/Discovery/DNS/clean-jhaddix-dns.txt $1 | ~/tools/massdns/bin/massdns -r ~/tools/massdns/lists/resolvers.txt -t A -q -o S | grep -v 142.54.173.92 > mass.txt
+python3 ~/tools/massdns/scripts/subbrute.py ~/tools/SecLists/Discovery/DNS/clean-jhaddix-dns.txt $1 | ~/tools/massdns/bin/massdns -r ~/tools/massdns/lists/resolvers.txt -t A -q -o S | grep -v 142.54.173.92 > mass.txt
 echo "${green}======> subbrute finished and saved as mass.txt"
 cat mass.txt | cut -d " " -f 1 > temp.txt
 sed s/.$// temp.txt > subbrute-domains.txt
