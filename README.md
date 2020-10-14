@@ -31,3 +31,5 @@ If you have problem with screenshot using aquatone
 - Find the chromium path
     * `locate chromium `
 - Copy the path and change it on the recon.sh line 40
+
+Find me here : https:/twitter.com/iam_j0ker
