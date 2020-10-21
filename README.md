@@ -6,7 +6,7 @@ Bash scripts written for finding subdomains using various available tools and sc
 `./recon.sh yahoo.com`
 # Features
 - Create a main folder having the domain name we given
-- Create a folder called subdomains and all the subdimains grabbed will be saved as one by one
+- Create a folder called subdomains and all the subdomains grabbed will be saved as one by one
 - Find the live domains using httprobe 
 - Take screenshots of the live domains using aquatone and saved into another folder called aqua-out
 
@@ -20,6 +20,7 @@ But you need to have go installed before running install-tools.sh
     * `sudo apt install golang-go`
 - Clone the repo
     * `git clone https://github.com/iamj0ker/Find-domains.git`
+    * `cd Find-domains`
 - Install tools needed
     * `chmod +x install-tools.sh`
     * `chmod +x recon.sh`
